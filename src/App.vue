@@ -1,30 +1,32 @@
 <template>
-  <div id="nav">
+<!-- initial load anim -->
+  <transition name="text-drop" appear>
+<!-- don't need routes for this landing page, but could easily add a nav bar with links to dif 'pages' -->
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  </div> -->
+  
+    <router-view/>
+  </transition>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background: url("./assets/new-background.jpg") no-repeat center fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+/* INITIAL TITLE LOAD ANIMATION */
+.text-drop-enter-active {
+    transition: opacity 3s ease;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.text-drop-enter-from {
+    opacity: 0;
 }
 </style>
