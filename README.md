@@ -4,11 +4,11 @@
 
 I ended up creating a Vue CLI project, but had a lot of difficulties using z-index for the background. I decided to create a single image of the background with the red side bar to get the app up and running.
 
-My initial build was using bootstrap's and Vue3's CDN in my index.html page and linking to a single js and css file. This ended up being easy, wirth the caveat that each larger <div> wrapper in my html file would ideally be it's own Vue component I am then composing with.
+My initial build was using bootstrap's and Vue3's CDN in my index.html page and linking to a single js and css file. This ended up being easy, with the caveat that each larger <div> wrapper in my html file would ideally be it's own Vue component I am then composing with. I included that repo in a dir labeled 'old-cdn'
 
-**live link(s)::** https://www.google.com
+**live link(s)::** https://asher-schulman.github.io/udundi-landing/
 
-**github repo link(s)::** https://www.github.com/asher-schulman
+**github repo link(s)::** https://github.com/asher-schulman/udundi-landing
 ## MVP
 - [x] static full size landing page
 - [x] animate (fade-in) "Explore" title on initial pg load

@@ -1,0 +1,114 @@
+body {
+    background: url("./assets/Coding-Challenge-Image.png") no-repeat center fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.heading-text {
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-size: 308px;
+    letter-spacing: 18px;
+}
+
+.plus-img {
+    height: 60px;
+    width: 60px;
+}
+
+.socials-btn {
+    height: 90px;
+    width: 90px;
+}
+
+/* had to put this transition on entire img element so animation would finish even after cursor leaves position */
+img {
+    transition: transform .5s ease-in-out;
+}
+img:hover {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    border-radius: 50%;
+    transform: translate(0, -5px);
+}
+
+/* for tablets, phones and smaller */
+/* pulled from https://getbootstrap.com/docs/5.0/layout/breakpoints/#between-breakpoints */
+@media (max-width: 767.98px) {
+    .heading-text {
+        font-size: 5rem;
+    }
+}
+
+.heading-subtext {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+#red-container {
+    min-height: 100vh;
+    min-width: 25vw;
+    background-color: #5f140f;
+    /* position: absolute; */
+    z-index: -1;
+}
+
+#title-container {
+    /* border: yellow solid 2px; */
+    position: fixed;
+    bottom: 30%;
+    left: 3%;
+}
+
+#details-container {
+    position: fixed;
+    /* border: purple solid 2px; */
+    right: 75%;
+    bottom: 25%;
+}
+
+#extra-details-container {
+    position: fixed;
+    right: 50%;
+    top: 20%;
+}
+
+/* #details-container-plus {
+    border: skyblue solid 2px;
+}
+
+#details-container-text {
+    border: orange solid 2px;
+}
+
+#socials-container {
+    border: white solid 2px;
+} */
+
+/* INITIAL TITLE LOAD ANIMATION */
+
+.text-drop-enter-active {
+    transition: opacity 3s ease;
+}
+
+.text-drop-enter-from {
+    opacity: 0;
+}
+
+/* TITLE SLIDE ANIMATION */
+.text-slide-enter-active {
+    transition: all .5s ease-out;
+}
+
+.text-slide-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.text-slide-enter-from, .text-slide-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+/* TEXT CARD EXPAND ANIMATION*/
