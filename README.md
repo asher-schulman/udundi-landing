@@ -13,7 +13,7 @@ My initial build was using bootstrap's and Vue3's CDN in my index.html page and 
 - [x] static full size landing page
 - [x] animate (fade-in) "Explore" title on initial pg load
 - [x] animate (slide left/right) "Explore" title & "more details" text during transition
-- [ ] animate (expand) Plus icon  into larger text box 
+- [x] animate (expand) Plus icon  into larger text box 
 - [ ] consider mobile responsiveness
 - [x] upload code to GitHub
 - [x] deploy live site on either GitHub Pages or Vercel
