@@ -28,9 +28,14 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production (deploy script has npm run build inside of it)
 ```
 npm run build
+```
+
+### Custom deploy to GitHub Pages shell script from terminal (this will create a new build and push just the new /dist folder to gh-pages branch off of master)
+```
+sh deploy.sh
 ```
 
 ### Customize configuration
